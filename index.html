@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>20/11</title>
+	<link rel="stylesheet" type="text/css" href="fire.css">
+	<script type="text/javascript" src="fire.js"></script>
+
+<style>
+		body {
+			margin: 0;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		#container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1; /* Đặt z-index để container nằm trên canvas */
+		}
+
+		#canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 0; /* Đặt z-index để canvas nằm dưới container */
+		}
+	</style>
+</head>
+
+<body>
+	<script src="https://rawcdn.githack.com/akzhy/Vara/16e30acca2872212e28735cfdbaba696a355c780/src/vara.min.js">
+	</script>
+	<div id="container"></div>
+	<canvas id="canvas">
+	
+	</canvas>
+	
+	
+
+</body>
+<script>
+	var vara = new Vara("#container",
+		"https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json",
+		[{
+				text: "from Thu Nga with love",
+				color: "#9999ff",
+				fontSize: 55,
+				y: 10
+			},
+			{
+				text: "Happy",
+				fontSize: 40,
+				color: "#999999"
+			},
+			{
+				text: "Teacher's Day",
+				fontSize: 35,
+				color: "#669999"
+			},
+			{
+				text: "20/11",
+				fontSize: 40,
+				color: "#cc9966"
+			}
+		], {
+			strokeWidth: 2,
+			textAlign: "center"
+		});
+</script>
+
+</html>
